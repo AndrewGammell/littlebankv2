@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "5949bfdd-b777-454a-8ba5-663fda781398",
+		"name": "little bank  examples requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accountNumber",
+						"value": "123456789",
+						"type": "text"
+					},
+					{
+						"key": "pin",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "balance",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accountNumber",
+						"value": "123456789",
+						"type": "text"
+					},
+					{
+						"key": "pin",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "withdrawl",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accountNumber",
+						"value": "123456789",
+						"type": "text"
+					},
+					{
+						"key": "pin",
+						"value": "1234",
+						"type": "text"
+					},
+					{
+						"key": "amount",
+						"value": "85",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/withdrawl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"withdrawl"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
