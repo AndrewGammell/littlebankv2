@@ -94,7 +94,7 @@ public class AtmController {
 		return response;
 	}
 	
-	public void validateWithdrawl(Account account, ATM atm, int amount) throws InvalidWithdrawlException {
+	private void validateWithdrawl(Account account, ATM atm, int amount) throws InvalidWithdrawlException {
 		
 		if(account.getTotalAvailableFunds() < amount) {
 			throw new InvalidWithdrawlException(String.format(StringConstant.OVER_WITHDRAWL_RESPONSE, amount, account.getTotalAvailableFunds()));
