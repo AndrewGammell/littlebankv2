@@ -1,15 +1,13 @@
 package com.littlebank.model;
 
-import static org.junit.Assert.assertEquals;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 
 
-@RunWith(SpringJUnit4ClassRunner.class)
 public class AccountTest {
 
 	private Account testAccount = new Account();
